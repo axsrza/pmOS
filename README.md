@@ -30,3 +30,15 @@ sudo service docker start
 sudo docker run hello-world
 
 ```
+
+## Instalar o Portainer
+
+```bash
+
+sudo docker run -d -p 9000:9000 --name portainer --restart always \
+  -v /var/run/docker.sock:/var/run/docker.sock \
+  -v portainer_data:/data \
+  -e ADMIN_PASSWORD=admin \
+  portainer/portainer-ce
+
+```
