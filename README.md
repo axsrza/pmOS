@@ -40,3 +40,19 @@ sudo docker run -d -p 9000:9000 --name portainer --restart always \
   -v portainer_data:/data portainer/portainer-ce
 
 ```
+
+## Verificar se o Docker está em execução
+
+```bash
+
+sudo service docker status
+
+```
+
+## Verificar contêineres em execução
+
+```bash
+
+sudo docker ps
+
+```
