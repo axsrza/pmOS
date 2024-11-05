@@ -1,3 +1,29 @@
+## Criar usuario e adicionar grupop
+
+```bash
+
+adduser user
+addgroup user wheel
+
+```
+
+## Editar repositorio
+
+```bash
+
+vi /etc/apk/repositories
+
+```
+
+## Adiconar sudo e editar %wheel ALL=(ALL) ALL
+
+```bash
+
+apk update
+apk add sudo
+visudo
+
+```
 
 ## Ao iniciar o sistema, conecte o usb ao computador e execute no console DO CELULAR:
 
