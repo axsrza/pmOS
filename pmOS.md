@@ -32,7 +32,7 @@ ip link set eth1 up
 
 ```
 
-## Setar ip eht1:
+## Verificar se deu certo:
 
 ```bash
 
