@@ -1,5 +1,5 @@
 
-## Após conectar ao usb do computador, executar no console DO CELULAR:
+## Ao iniciar o sistema, conecte o usb ao computador e execute no console DO CELULAR:
 
 ```bash
 
