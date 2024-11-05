@@ -79,3 +79,31 @@ eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 
 ssh user@172.16.42.1
 
 ```
+
+comandos que executei:
+wpa_passphrase "rozza_5G" "Esquina@238" | sudo tee /etc/wpa_supplicant/wpa_supplicant.conf 
+
+nano /etc/wpa_supplicant/wpa_supplicant.conf
+
+network={
+        ssid="rozza_5G"
+        #psk="Esquina@238"
+        psk=676ed05ab65b5456f1ab780a758459b24401865040c736ef798fff1988710bae
+}
+
+nano /etc/network/interfaces
+
+auto lo
+iface lo inet loopback
+
+auto wlan0
+iface wlan0 inet dhcp
+
+sudo rc-update add networking default
+
+sudo reboot
+
+sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -D nl80211 -B
+sudo udhcpc -i wlan0
+
+sudo rc-update add wpa_supplicant default
