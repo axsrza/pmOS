@@ -56,3 +56,31 @@ sudo service docker status
 sudo docker ps
 
 ```
+
+## Criar usuario
+
+```bash
+
+adduser user
+addgroup user wheel
+
+
+```
+
+## Editar Repositorio
+
+```bash
+
+vi /etc/apk/repositories
+
+```
+
+## Adiconar Sudo e editar %wheel ALL=(ALL) ALL
+
+```bash
+
+apk update
+apk add sudo
+visudo
+
+```
