@@ -64,7 +64,6 @@ sudo docker ps
 adduser user
 addgroup user wheel
 
-
 ```
 
 ## Editar Repositorio
