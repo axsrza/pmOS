@@ -80,8 +80,17 @@ ssh user@172.16.42.1
 
 ```
 
-comandos que executei:
+## Adicionar rede wifi:
+
+```bash
+
 wpa_passphrase "rozza_5G" "Esquina@238" | sudo tee /etc/wpa_supplicant/wpa_supplicant.conf 
+
+```
+
+## Verificar arquivo da rede:
+
+```bash
 
 nano /etc/wpa_supplicant/wpa_supplicant.conf
 
@@ -91,6 +100,12 @@ network={
         psk=676ed05ab65b5456f1ab780a758459b24401865040c736ef798fff1988710bae
 }
 
+```
+
+## Adicionar network:
+
+```bash
+
 nano /etc/network/interfaces
 
 auto lo
@@ -99,11 +114,29 @@ iface lo inet loopback
 auto wlan0
 iface wlan0 inet dhcp
 
+```
+
+## Adicionar network default:
+
+```bash
+
 sudo rc-update add networking default
 
-sudo reboot
+```
+
+## Ativar e pegar ip:
+
+```bash
 
 sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -D nl80211 -B
 sudo udhcpc -i wlan0
 
+```
+
+## Adicionar wpa default:
+
+```bash
+
 sudo rc-update add wpa_supplicant default
+
+```
