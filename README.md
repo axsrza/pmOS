@@ -146,7 +146,7 @@ ssh user@172.16.42.1
 
 ```
 
-## Adicionar rede wifi:
+## Listar e adicionar rede wifi:
 
 ```bash
 
@@ -156,25 +156,23 @@ sudo nmcli device wifi connect "$SSID" password "$PASSWORD" ifname "wlan0"
 
 ```
 
-
-
-
-
-
-
-
-
-
-## Adicionar rede wifi:
+## Alterar senha root:
 
 ```bash
 
-sudo nmcli device wifi list ifname wlan0
-
-sudo nmcli device wifi connect "$SSID" password "$PASSWORD" ifname "wlan0"
+sudo passwd root
 
 ```
 
+## Testar alteração:
+
+```bash
+
+su
+
+passwd
+
+```
 
 
 
