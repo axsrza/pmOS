@@ -179,6 +179,7 @@ sudo docker run --rm hello-world
 ```bash
 
 sudo docker pull benbusby/whoogle-search
+
 sudo docker run --publish 5000:5000 --detach --name whoogle-search benbusby/whoogle-search:latest
 
 ```
