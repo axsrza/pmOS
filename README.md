@@ -204,6 +204,16 @@ podman run --rm hello-world
 
 ```
 
+## Podman Whoogle-search:
+
+```bash
+
+sudo podman pull benbusby/whoogle-search
+
+sudo podman run --publish 5000:5000 --detach --name whoogle-search benbusby/whoogle-search:latest
+
+```
+
 ## Docker:
 
 ```bash
@@ -220,7 +230,7 @@ sudo docker run --rm hello-world
 
 ```
 
-## Whoogle-search:
+## Docker Whoogle-search:
 
 ```bash
 
