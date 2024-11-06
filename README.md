@@ -174,13 +174,15 @@ passwd
 
 ```
 
+## Descomentar linhas #Port 22 #PermitRootLogin yes #PasswordAuthentication yes(alterar para yes) #PermitEmptyPasswords no
 
+```bash
 
+sudo nano /etc/ssh/sshd_config
 
+```
 
-
-
-
+Executar poweroff no host e reboot o celular
 
 ## Verificar se deu certo:
 
@@ -215,14 +217,3 @@ sudo docker pull benbusby/whoogle-search
 sudo docker run --publish 5000:5000 --detach --name whoogle-search benbusby/whoogle-search:latest
 
 ```
-
-
-trocar senha do root
-
-sudo passwd root
-
-testar
-
-su
-
-passwd
