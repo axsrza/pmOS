@@ -27,6 +27,7 @@ para salvar aperte ESC :wq
 ```bash
 
 adduser user
+addgroup sudo
 adduser user sudo
 
 ```
