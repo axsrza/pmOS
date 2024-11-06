@@ -1,5 +1,6 @@
+Apos a instalação logar como root
 
-## Descomentar linha http://dl-cdn.alpinelinux.org/alpine/v3.20/community
+## Descomentar linha #http://dl-cdn.alpinelinux.org/alpine/v3.20/community
 
 ```bash
 
@@ -9,7 +10,7 @@ vi /etc/apk/repositories
 
 Para salvar aperte ESC :wq
 
-## Adicionar sudo e editar %wsudo ALL=(ALL) ALL
+## Adicionar sudo e editar descomentar #%sudo ALL=(ALL) ALL
 
 ```bash
 
@@ -85,6 +86,8 @@ pmbootstrap flasher --method=adb sideload
 
 ```
 
+Apos a instalação voltar como root: su -
+
 ## Ao iniciar o sistema, conecte o usb ao computador e execute no console DO CELULAR:
 
 ```bash
@@ -95,8 +98,8 @@ ip a
 
 Algo assim deve ser exibido:
 
-usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
-    link/ether 96:0d:c8:fc:23:2f brd ff:ff:ff:ff:ff:ff
+usb0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 0000 qdisc pfifo_fast state UP qlen 0000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
     inet 172.16.42.1/16 brd 172.16.255.255 scope global usb0
 
 ## Execute no console DO COMPUTADOR:
@@ -128,13 +131,14 @@ ip a
 
 Algo assim deve ser exibido:
 
-eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 1000
-    link/ether fa:48:e7:bb:81:7c brd ff:ff:ff:ff:ff:ff
+eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 0000 qdisc pfifo_fast state UP qlen 0000
+    link/ether 00:00:00:00:00:00 brd ff:ff:ff:ff:ff:ff
     inet 172.16.42.2/16 scope global eth1
 
 ## Connect via SSH:
 
-Se der WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! ssh-keygen -R 172.16.42.1
+WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
+Execute: ssh-keygen -R 172.16.42.1
 
 ```bash
 
