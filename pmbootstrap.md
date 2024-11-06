@@ -33,6 +33,14 @@ apk add pmbootstrap
 
 ```
 
+## Entrar como user:
+
+```bash
+
+su - user
+
+```
+
 ## Iniciar pmbootstrap:
 
 ```bash
