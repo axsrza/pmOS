@@ -174,7 +174,7 @@ passwd
 
 ```
 
-## Descomentar linhas #Port 22 #PermitRootLogin yes #PasswordAuthentication yes(alterar para yes) #PermitEmptyPasswords no
+## Descomentar linhas #Port 22 #PermitRootLogin yes(alterar para yes) #PasswordAuthentication yes #PermitEmptyPasswords no
 
 ```bash
 
