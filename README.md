@@ -184,7 +184,7 @@ sudo nano /etc/ssh/sshd_config
 
 Executar poweroff no host e reboot o celular
 
-## Verificar se deu certo:
+## Verificar se deu certo NO CELULAR:
 
 ```bash
 
