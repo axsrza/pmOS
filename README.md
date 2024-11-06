@@ -192,6 +192,22 @@ ip a
 
 ```
 
+## Podman:
+
+```bash
+
+sudo apk add podman
+
+sudo service docker start
+
+sudo rc-update add docker default
+
+podman info
+
+podman run --rm hello-world
+
+```
+
 ## Docker:
 
 ```bash
