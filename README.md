@@ -134,6 +134,8 @@ eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc pfifo_fast state UP qlen 
 
 ## Connect via SSH:
 
+Se der WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! ssh-keygen -R 172.16.42.1
+
 ```bash
 
 ssh user@172.16.42.1
