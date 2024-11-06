@@ -86,15 +86,6 @@ pmbootstrap flasher --method=adb sideload
 
 ```
 
-## Desligar computador:
-
-```bash
-
-sudo poweroff
-
-```
-
-
 ## Ao iniciar o sistema, conecte o usb ao computador e execute no console DO CELULAR:
 
 ```bash
@@ -154,59 +145,16 @@ ssh user@172.16.42.1
 
 ```bash
 
-wpa_passphrase "rozza_5G" "Esquina@238" | sudo tee /etc/wpa_supplicant/wpa_supplicant.conf 
+sudo nmcli device wifi list ifname wlan0
+
+sudo nmcli device wifi connect "$SSID" password "$PASSWORD" ifname "wlan0"
 
 ```
 
-## Verificar arquivo da rede:
+## Verificar se deu certo:
 
 ```bash
 
-nano /etc/wpa_supplicant/wpa_supplicant.conf
-
-network={
-        ssid="rozza_5G"
-        #psk="Esquina@238"
-        psk=676ed05ab65b5456f1ab780a758459b24401865040c736ef798fff1988710bae
-}
-
-```
-
-## Adicionar network:
-
-```bash
-
-nano /etc/network/interfaces
-
-auto lo
-iface lo inet loopback
-
-auto wlan0
-iface wlan0 inet dhcp
-
-```
-
-## Adicionar network default:
-
-```bash
-
-sudo rc-update add networking default
-
-```
-
-## Ativar e pegar ip:
-
-```bash
-
-sudo wpa_supplicant -i wlan0 -c /etc/wpa_supplicant/wpa_supplicant.conf -D nl80211 -B
-sudo udhcpc -i wlan0
-
-```
-
-## Adicionar wpa default:
-
-```bash
-
-sudo rc-update add wpa_supplicant default
+ip a
 
 ```
