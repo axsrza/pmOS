@@ -152,6 +152,34 @@ sudo nmcli device wifi connect "$SSID" password "$PASSWORD" ifname "wlan0"
 
 ```
 
+
+
+
+
+
+
+
+
+
+## Adicionar rede wifi:
+
+```bash
+
+sudo nmcli device wifi list ifname wlan0
+
+sudo nmcli device wifi connect "$SSID" password "$PASSWORD" ifname "wlan0"
+
+```
+
+
+
+
+
+
+
+
+
+
 ## Verificar se deu certo:
 
 ```bash
