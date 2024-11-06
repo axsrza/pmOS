@@ -28,11 +28,9 @@ para salvar aperte ESC :wq
 
 adduser user
 addgroup user wheel
+addgroup user sudo
 
 ```
-
-
-
 
 ## Instalar pmbootstrap:
 
