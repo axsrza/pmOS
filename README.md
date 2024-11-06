@@ -1,7 +1,6 @@
 
 ## Descomentar linha http://dl-cdn.alpinelinux.org/alpine/v3.20/community
 
-
 ```bash
 
 vi /etc/apk/repositories
@@ -158,3 +157,19 @@ sudo nmcli device wifi connect "$SSID" password "$PASSWORD" ifname "wlan0"
 ip a
 
 ```
+
+## Docker:
+
+```bash
+
+sudo apk add docker
+
+sudo service docker start
+
+sudo rc-update add docker default
+
+sudo docker info
+
+sudo docker run --rm hello-world
+
+``
