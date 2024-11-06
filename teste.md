@@ -10,7 +10,7 @@ vi /etc/apk/repositories
 
 para salvar aperte ESC :wq
 
-## Adiconar sudo e editar %wheel ALL=(ALL) ALL e %wsudo ALL=(ALL) ALL
+## Adiconar sudo e editar %wsudo ALL=(ALL) ALL
 
 ```bash
 
@@ -27,7 +27,6 @@ para salvar aperte ESC :wq
 ```bash
 
 adduser user
-adduser user wheel
 adduser user sudo
 
 ```
