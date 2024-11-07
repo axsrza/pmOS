@@ -204,16 +204,6 @@ podman run --rm hello-world
 
 ```
 
-## Podman Whoogle-search:
-
-```bash
-
-sudo podman pull benbusby/whoogle-search
-
-sudo podman run --publish 5000:5000 --detach --name whoogle-search benbusby/whoogle-search:latest
-
-```
-
 ## Configuração de Firewall Podman:
 
 ```bash
@@ -227,6 +217,16 @@ nft add rule inet nat postrouting iifname "podman*" masquerade
 nft add rule inet filter forward ct state { established, related } accept
 
 nft add rule inet filter forward iifname "podman*" accept
+
+```
+
+## Podman Whoogle-search:
+
+```bash
+
+sudo podman pull benbusby/whoogle-search
+
+sudo podman run --publish 5000:5000 --detach --name whoogle-search benbusby/whoogle-search:latest
 
 ```
 
