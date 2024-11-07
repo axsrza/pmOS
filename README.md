@@ -230,6 +230,14 @@ sudo podman run --publish 5000:5000 --detach --name whoogle-search benbusby/whoo
 
 ```
 
+## Podman firefox:
+
+```bash
+
+sudo podman run -d -p 5800:5800 -p 5900:5900 jlesage/firefox
+
+```
+
 ## Desativar firewall(não recomendado):
 
 ```bash
