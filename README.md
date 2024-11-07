@@ -204,13 +204,19 @@ podman run --rm hello-world
 
 ```
 
+## Desativar firewall:
+
+```bash
+
+sudo nft flush ruleset
+
+```
+
 ## Podman Whoogle-search:
 
 ```bash
 
 sudo podman pull benbusby/whoogle-search
-
-sudo podman run --cap-add=NET_RAW --network host --detach --name whoogle-search benbusby/whoogle-search:latest
 
 sudo podman run --publish 5000:5000 --detach --name whoogle-search benbusby/whoogle-search:latest
 
