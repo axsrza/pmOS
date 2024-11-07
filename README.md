@@ -271,3 +271,39 @@ sudo docker pull benbusby/whoogle-search
 sudo docker run --publish 5000:5000 --detach --name whoogle-search benbusby/whoogle-search:latest
 
 ```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## sdcard:
+
+```bash
+
+sudo mkdir -p /mnt/sdcard
+
+sudo mount /dev/mmcblk0p1 /mnt/sdcard
+
+sudo mkdir /mnt/sdcard/whoogle-data
+
+sudo podman run --publish 5000:5000 --detach --name whoogle-search -v --memory 512m --cpus 1 /mnt/sdcard/whoogle-data:/whoogle-data benbusby/whoogle-search:latest
+
+```
+
+
+
+
+
+
