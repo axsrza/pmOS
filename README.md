@@ -309,3 +309,13 @@ sudo podman run -d -p 5800:5800 -p 5900:5900 -v /mnt/sdcard/firefox-data:/config
 
 
 
+## Filebrowser:
+
+```bash
+
+sudo nft add rule inet filter input tcp dport 8080 accept
+
+
+```
+
+
