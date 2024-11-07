@@ -315,6 +315,8 @@ sudo podman run -d -p 5800:5800 -p 5900:5900 -v /mnt/sdcard/firefox-data:/config
 
 apk add curl
 
+apk add bash
+
 sudo nft add rule inet filter input tcp dport 8080 accept
 
 ```
@@ -322,6 +324,7 @@ sudo nft add rule inet filter input tcp dport 8080 accept
 ## Filebrowser
 
 ```bash
+
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 filebrowser -a 0.0.0.0 -r /
 
@@ -330,6 +333,7 @@ filebrowser -a 0.0.0.0 -r /
 ## Ativar Filebrowser
 
 ```bash
+
 filebrowser -a 0.0.0.0 -r /
 
 ```
