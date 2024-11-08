@@ -24,7 +24,7 @@ sudo mount /dev/mmcblk0p1 /mnt/sdcard
 
 sudo mkdir /mnt/sdcard/whoogle-data
 
-sudo podman run --publish 5000:5000 --detach --name whoogle-search -v /mnt/sdcard/whoogle-data:/whoogle-data benbusby/whoogle-search:latest
+sudo docker run --publish 5000:5000 --detach --name whoogle-search -v /mnt/sdcard/whoogle-data:/whoogle-data benbusby/whoogle-search:latest
 
 ```
 
