@@ -64,7 +64,7 @@ pmbootstrap pull
 
 ```bash
 
-pmbootstrap install --android-recovery-zip
+$ pmbootstrap install --android-recovery-zip --recovery-install-partition=data
 
 ```
 
