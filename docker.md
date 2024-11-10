@@ -41,3 +41,13 @@ sudo mkdir -p /var/lib/docker/volumes/obsidian-data
 docker run -d --name=obsidian --security-opt seccomp=unconfined -e PUID=$(id -u) -e PGID=$(id -g) -e TZ=America/Sao_Paulo -p 3000:3000 -p 3001:3001 -v /var/lib/docker/volumes/obsidian-data:/config --device /dev/dri:/dev/dri --shm-size="1gb" --restart unless-stopped lscr.io/linuxserver/obsidian:latest
 
 ```
+
+## Firefox:
+
+```bash
+
+sudo docker run -d -p 5800:5800 -p 5900:5900 -v /var/lib/docker/volumes/firefox-data:/config jlesage/firefox
+
+```
+
+
